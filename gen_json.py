@@ -24,7 +24,7 @@ tpl = {
   "compiler": ENGINE,
 }
 
-for id in range(0, EP_SUPPLY):
-    tpl["name"] = "{} EP{} #{}".format(NAME, EP_NO, START_ID+id)
-    with open("{}/{}.json".format(OUTPUT_DIR, id+1), "w") as f:
+for idx in range(0, EP_SUPPLY):
+    tpl["name"] = "{} EP{} #{}".format(NAME, EP_NO, idx+1)
+    with open("{}/{}.json".format(OUTPUT_DIR, START_ID+idx), "w") as f:
         json.dump(tpl, f)
