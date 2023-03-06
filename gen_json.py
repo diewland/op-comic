@@ -9,10 +9,10 @@ NAME = "OP Comic"
 DESC = "The OP Comic is a series of 10 Episode (100 each) Hand drawn by Bro_Prins, 95% will donate to RPGF (5% for operation)"
 IMG = "https://diewland.github.io/op-comic/assets/Ep{:02}.jpg".format(EP_NO)
 ATTRS = [
-    #{
-    #  "trait_type": "Edition",
-    #  "value": "Special"
-    #},
+    {
+      "trait_type": "Episode",
+      "value": "EP{}".format(EP_NO),
+    },
 ]
 ENGINE = "Jigsaw Engine"
 
